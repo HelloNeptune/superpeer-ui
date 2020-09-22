@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'icomoon';
+  src:
+    url('~@/assets/fonts/icomoon.ttf?83i6cl') format('truetype'),
+    url('~@/assets/fonts/icomoon.woff?83i6cl') format('woff'),
+    url('~@/assets/fonts/icomoon.svg?83i6cl#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-down:before {
+  content: "\e90b";
+}
+.icon-calendar:before {
+  content: "\e90c";
+}
+.icon-camera:before {
+  content: "\e90d";
+}
+.icon-clock:before {
+  content: "\e90e";
+}
+.icon-microphone:before {
+  content: "\e90f";
+}
+.icon-options:before {
+  content: "\e910";
+}
+.icon-user:before {
+  content: "\e911";
+}
