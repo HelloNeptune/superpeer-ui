@@ -1,0 +1,79 @@
+@import 'variables';
+
+button {
+  appearance: none;
+  border: none;
+  margin: 0;
+  padding: 4px 6px;
+  outline: none;
+}
+
+button, a.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 16px;
+  border-radius: $sp-radius;
+  background-color: $sp-primary-color;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: transform 0.15s $sp-motion-in, box-shadow 0.2s $sp-motion-in, background-color 0.2s $sp-motion-in;
+  box-shadow: 0 0 0 3px transparentize( lighten( $sp-primary-color, 5% ), 1 );
+
+
+  /**
+   * States
+   */
+  &:hover {
+    background-color: transparentize( $sp-primary-color, 0.1 );
+  }
+  &:active, &:focus {
+    box-shadow: 0 0 0 1px lighten( $sp-primary-color, 25% );
+  }
+
+  /**
+   * Utilities
+   */
+  [class^="ic-"] {
+    font-size: 16px;
+  }
+
+  /**
+   * Appearance presets
+   */
+  &.circle {
+    border-radius: 50%;
+    &:hover {
+      transform: scale( 0.95 );
+    }
+  }
+
+  &.outline {
+    background-color: transparent;
+    border: 1px solid $sp-primary-color;
+    color: $sp-primary-color;
+  }
+
+  /**
+   * Size presets
+   */
+  &.medium {
+    width: 48px;
+    height: 48px;
+  }
+
+  &.large {
+    width: 60px;
+    height: 60px;
+  }
+
+  /**
+   * Color presets
+   */
+  &.light {
+    background-color: #F4F7FA;
+    color: #222222;
+  }
+}

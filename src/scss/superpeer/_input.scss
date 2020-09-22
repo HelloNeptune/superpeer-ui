@@ -1,0 +1,57 @@
+.input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  /**
+   * Utilities
+   */
+  &.icon {
+    input {
+      padding-left: 40px;
+    }
+  }
+
+  &.label {
+    label {
+      min-width: 100px;
+    }
+    input, select, button {
+      width: 100% !important;
+    }
+  }
+}
+
+.input input, .input select {
+  appearance: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 15px;
+  padding: 16px;
+  border: 1px solid #B9C3D5;
+  border-radius: $sp-radius;
+  transition: border 0.3s $sp-motion-in;
+
+  /**
+   * States
+   */
+  &:active, &:focus {
+    border-color: transparentize( lighten( $sp-primary-color, 5% ), 0 );
+  }
+}
+
+.input select {
+  position: relative;
+  background: transparent url( '~@/assets/sprite/arrow-down.png' ) no-repeat calc( 100% - 10px ) 50% / 18px; 
+}
+
+.input [class^="ic-"] {
+  position: relative;
+  font-size: 18px;
+  color: #3488FA;
+  margin-right: -18px;
+  right: -16px;
+}

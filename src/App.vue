@@ -19,7 +19,6 @@
     display: flex;
     position: relative;
     height: 100%;
-    align-items: center;
     justify-content: center;
   }
 </style>

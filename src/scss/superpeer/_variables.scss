@@ -2,6 +2,13 @@
  *
  * - Global Variables
  */
-$primary-color: #3488FA;
-$accent-color: #FFFFFF;
-$app-background-color: #F4F7FA;
+$sp-primary-color: #3488FA;
+$sp-accent-color: #FFFFFF;
+$sp-app-background-color: #F4F7FA;
+$sp-radius: 8px;
+
+/**
+ *
+ * - Transition Functions
+ */
+$sp-motion-in: cubic-bezier(0.77, 0, 0.175, 1);

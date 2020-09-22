@@ -9,7 +9,7 @@
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="ic-"], [class*=" ic-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: never;
@@ -24,24 +24,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-arrow-down:before {
+.ic-arrow-down:before {
   content: "\e90b";
 }
-.icon-calendar:before {
+.ic-calendar:before {
   content: "\e90c";
 }
-.icon-camera:before {
+.ic-camera:before {
   content: "\e90d";
 }
-.icon-clock:before {
+.ic-clock:before {
   content: "\e90e";
 }
-.icon-microphone:before {
+.ic-microphone:before {
   content: "\e90f";
 }
-.icon-options:before {
+.ic-options:before {
   content: "\e910";
 }
-.icon-user:before {
+.ic-user:before {
   content: "\e911";
 }
