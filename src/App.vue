@@ -15,7 +15,11 @@
 </script>
 
 <style lang="scss">
-  .container {
-    display: block;
+  #app {
+    display: flex;
+    position: relative;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
   }
 </style>
